@@ -5,7 +5,7 @@ import java.util.UUID;
 public class Student {
     private final String firstName;
     private final String lastName;
-    private final String emailName;
+    private final String email;
     private final UUID studentId;
     private final Gender gender;
 
@@ -17,8 +17,8 @@ public class Student {
         return lastName;
     }
 
-    public String getEmailName() {
-        return emailName;
+    public String getEmail() {
+        return email;
     }
 
     public UUID getStudentId() {
@@ -29,10 +29,10 @@ public class Student {
         return gender;
     }
 
-    public Student(String firstName, String lastName, String emailName, UUID studentId, Gender gender) {
+    public Student(String firstName, String lastName, String email, UUID studentId, Gender gender) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.emailName = emailName;
+        this.email = email;
         this.studentId = studentId;
         this.gender = gender;
     }

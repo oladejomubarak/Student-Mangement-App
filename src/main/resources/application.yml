@@ -1,0 +1,10 @@
+server:
+  servlet:
+    context-path: /api
+
+data:
+  datasource:
+  jdbc-url: jdbc:postgresql://localhost:5432/myProject
+  username: postgres
+  password: password
+  poll-size: 30
