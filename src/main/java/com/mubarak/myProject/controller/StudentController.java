@@ -1,26 +1,27 @@
 package com.mubarak.myProject.controller;
 
-import com.mubarak.myProject.models.Gender;
 import com.mubarak.myProject.models.Student;
+import com.mubarak.myProject.service.StudentService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-import java.util.UUID;
 
 @RestController
 @RequestMapping("/students")
 public class StudentController {
+    private final StudentService studentService;
+
+    @Autowired
+    public StudentController(StudentService studentService) {
+        this.studentService = studentService;
+    }
 
     @GetMapping
     public List<Student> getAllStudents(){
-        return List.of(
-                new Student("Oladejo", "Mubarak", "oladejomubarak@gmail.com",
-                UUID.randomUUID(), Gender.MALE), new Student("Ola", "Aisha",
-                "oladejomubarak@yahoo.com",
-                UUID.randomUUID(), Gender.FEMALE)
-        );
 
+    return studentService.getAllStudents();
     }
 }
