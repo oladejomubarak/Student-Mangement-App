@@ -1,6 +1,6 @@
 package com.mubarak.myProject.controller;
 
-import com.mubarak.myProject.models.Student;
+import com.mubarak.myProject.data.models.Student;
 import com.mubarak.myProject.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

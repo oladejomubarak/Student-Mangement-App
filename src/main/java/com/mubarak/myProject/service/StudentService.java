@@ -1,7 +1,7 @@
 package com.mubarak.myProject.service;
 
 import com.mubarak.myProject.data.StudentDataAccessService;
-import com.mubarak.myProject.models.Student;
+import com.mubarak.myProject.data.models.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

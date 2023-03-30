@@ -1,4 +1,4 @@
-package com.mubarak.myProject.models;
+package com.mubarak.myProject.data.models;
 
 import java.util.UUID;
 
